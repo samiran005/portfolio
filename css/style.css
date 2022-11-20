@@ -15,12 +15,27 @@
     --hover: hsl(260, 100%, 51%);
 }
 
+#menuClick {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
 #bars {
-    background-image: url(../images/bars-solid.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-image: url(../images/bars-solid.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
     width: 20px;
     cursor: pointer;
+}
+.menu-icon {
+    display: none;
+}
+#xbar {
+    width: 20px;
+    cursor: pointer;
+}
+.menu-xicon {
+    display: none;
 }
 
 .container {
