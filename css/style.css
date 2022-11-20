@@ -10,11 +10,14 @@
 
 :root {
     --main-color: #033a80;
-    --bg-color: #ffff;
+    --white-color: #ffff;
     --text-color: #0f0c27;
     --hover: cyan;
     --mirror-blur: rgba(255, 255, 255,0.2);
-    --bg-blur: rgba(255, 157, 53,.2);
+    --bg-blur: rgba(255, 255, 255, 0.2);
+
+    --nav-blur: rgba(90, 90, 90, 0.6);
+    --shadow: rgba(0,0,0,.3);
 }
 
 #menuClick {
@@ -65,7 +68,7 @@
     background-color: var(--mirror-blur);
     backdrop-filter: blur(30px);
     min-height: 4rem;
-    box-shadow: 0 -10px 20px 10px rgb(157, 157, 157);
+    box-shadow: 0 -10px 20px 10px var(--shadow);
     position: fixed;
     top: 0;
     width: 100vw;
@@ -84,7 +87,7 @@
     .menu-bar {
         display: none;
         flex-direction: column;
-        background-color: rgba(90, 90, 90, 0.5);
+        background-color: var(--nav-blur);
         width: 70%;
         border-radius: 2rem;
         position: absolute;
@@ -99,7 +102,7 @@
     
     .menu-bar li a{
         padding: 5px 0;
-        color: var(--bg-color);
+        color: var(--white-color);
         font-size: 17px;
         font-weight: 400;
         user-select: none;
