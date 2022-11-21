@@ -131,7 +131,7 @@
     .menu-bar {
         position: absolute;
         width: 50%;
-        height: 90vh;
+        height: 85vh;
         overflow: auto;
         background-color: rgb(255, 255, 255);
         border-bottom-left-radius: 54%;
@@ -156,6 +156,12 @@
     }
     .menu-bar li a:hover {
         color: cyan;
+    }
+}
+
+@media (max-height: 470px) {
+    .menu-bar  {
+        border-bottom-left-radius: 10%;
     }
 }
 
