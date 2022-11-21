@@ -27,6 +27,10 @@ bars.addEventListener('click',()=>{
 
 document.addEventListener('scroll',()=>{
     // menuBar.classList.remove("display-flex");
+    if(visibleMenuBar){
+        menuBar.style.transform = "translate(500px)";
+        visibleMenuBar = false;
+    }
     menuIcon.classList.add("display-flex");
     menuXicon.classList.remove("display-flex");
     blurEffect.classList.remove("display-flex");
