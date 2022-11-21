@@ -152,7 +152,7 @@
         user-select: none;
         font-size: 17px;
         font-weight: 400;
-        padding: 30px 50px;
+        padding: 0 50px;
     }
     .menu-bar li a:hover {
         color: cyan;
